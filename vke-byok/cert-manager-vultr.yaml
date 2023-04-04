@@ -1,0 +1,11 @@
+repositories:
+  - name: "vultr"
+    url: "https://vultr.github.io/helm-charts/"
+
+releases:
+  - name: cert-manager-webhook-vultr
+    namespace: cert-manager
+    chart: vultr/cert-manager-webhook-vultr
+    values:
+    - image:
+        tag: v0.3.1
